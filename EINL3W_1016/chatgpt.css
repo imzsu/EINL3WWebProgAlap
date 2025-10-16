@@ -1,0 +1,66 @@
+body {
+    font-family: Georgia, serif;
+    background-color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 50%; /* Keskenyebb táblázat */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+caption h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.header th {
+    background-color: #bfbfbf; /* Szürke */
+}
+
+.row1 td {
+    background-color: red;
+    color: black;
+}
+
+.row2 td {
+    background-color: #ffff99; /* Világos sárga */
+}
+
+.row3 td:nth-child(2) {
+    background-color: #ffff00; /* Élénk sárga */
+}
+
+.row3 td:not(:nth-child(2)) {
+    background-color: #ffff99;
+}
+
+/* Görgethető div a 2. sor 2. cellájában */
+.scroll-box {
+    width: 100%;
+    height: 120px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    background-color: #ffff99;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: justify;
+}
