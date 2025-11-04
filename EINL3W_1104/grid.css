@@ -1,0 +1,35 @@
+.grid button {
+  width: 80px;
+  height: 80px;
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border: none;                
+  cursor: pointer;
+  border-radius: 12px;          
+  text-indent: -9999px;        
+  overflow: hidden;
+}
+
+
+#start       { background-image: url('images/start.png'); }
+#stop        { background-image: url('images/stop.png'); }
+#startstop   { background-image: url('images/startstop.png'); }
+
+#mute        { background-image: url('images/mute.png'); }
+#quiet       { background-image: url('images/quiet.png'); }
+#loud        { background-image: url('images/loud.png'); }
+
+#veryslow    { background-image: url('images/veryslow.png'); }
+#slow        { background-image: url('images/slow.png'); }
+#normal-speed{ background-image: url('images/normal.png'); }
+#fast        { background-image: url('images/fast.png'); }
+#veryfast    { background-image: url('images/veryfast.png'); }
+
+#small       { background-image: url('images/small.png'); }
+#normal-size { background-image: url('images/normal-size.png'); }
+#big         { background-image: url('images/big.png'); }
+
+#hasitened   { background-image: url('images/finished.png'); }
+#length      { background-image: url('images/length.png'); }
+#currently   { background-image: url('images/position.png'); }
