@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömb elemei hozzáadása</title>
+</head>
+<body>
+
+    <h3>Tömb elemeinek hozzáadása</h3>
+    <strong>Előtte:</strong> <p id="EINL3W"> </p>
+    <strong>Utána:</strong> <p id="EINL3W_1"> </p>
+
+    <strong>Tömb hossza:</strong> <p id="EINL3W_2"> </p>
+
+    <button onclick="hozzaad()">Tömbelem hozzáadása</button>
+    <button onclick="hossz()">Tömb hossza</button>
+
+    <script>
+        let prognyelvek = ["HTML5", "CSS", "JS",];
+        document.getElementById("EINL3W").innerHTML = prognyelvek;
+
+        function hozzaad() {
+            prognyelvek.push("C nyelv");
+            document.getElementById("EINL3W_1").innerHTML = prognyelvek;
+        }
+
+        function hossz() {
+            document.getElementById("EINL3W_2").innerHTML = prognyelvek.length;
+        }
+    </script>
+    
+</body>
+</html>
