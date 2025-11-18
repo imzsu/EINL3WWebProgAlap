@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON megváltoztatása JavaScript-ben</title>
+</head>
+<body>
+    <h2>JavaScript objektum konvertálása JSON String</h2>
+    <div class="jsonString" style="font-family: monospace;">
+
+    </div>
+    <script>
+        const jsonObjKI = {
+            Egyetem: "Tokaj Hegyalja Egyetem",
+            Város: "Sárospatak",
+            Irányítószám: "3950",
+            Név: "Kuknyó Imre"
+        }
+
+        const jsonString = JSON.stringify(jsonObjKI, null, 4);
+
+        const jsonStringDiv = document.querySelector('.jsonString');
+        jsonStringDiv.innerHTML = jsonString;
+    </script>
+</body>
+</html>

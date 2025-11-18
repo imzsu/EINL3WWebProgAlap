@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON fájl készítés - JavaScript-ben</title>
+</head>
+<body>
+
+    <h3>JSON fájl készítés - JavaScript-ben</h3>
+
+    <strong>JSON:</strong>
+    <p id="EINL3W"></p>
+    <button onclick="general()">JSON generálás</button>
+
+    <script>
+    function general() {
+        const obj = [
+            { nev: "HTML5", kiterjesztes: ".html" },
+            { nev: "CSS3", kiterjesztes: ".css" },
+            { nev: "JavaScript", kiterjesztes: ".js" }
+        ];
+
+        const JSONdata = JSON.stringify(obj);
+
+        document.getElementById("EINL3W").innerHTML = JSONdata;
+    }
+    </script>
+    
+</body>
+</html>
