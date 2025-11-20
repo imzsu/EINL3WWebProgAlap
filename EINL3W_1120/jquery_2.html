@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery feladat_2.</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("ul li:first").hide();
+                $("ul li:first-child").hide();
+                $("[href]").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <h2 class="fejlec">jQuery feladatok</h2>
+
+    <p><strong>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</strong></p>
+    <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+
+    <ul>
+        <li>egy</li>
+        <li>kettő</li>
+        <li>három</li>
+    </ul>
+
+    <ul>
+        <li>tíz</li>
+        <li>húsz</li>
+        <li>harminc</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>1111aaaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+        <tr>
+            <td>2222aaaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+        <tr>
+            <td>3333aaaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+        <tr>
+            <td>4444aaaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+        <tr>
+            <td>5555aaaaaa</td>
+            <td>bbbbb</td>
+        </tr>
+    </table>
+
+    <button onClick="$('a').hide()"><strong>Kattints ide_1!</strong></button>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <button onClick="$('this').hide()"><strong>Kattints ide_2!</strong></button>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <button onClick="$('.fejlec').hide()"><strong>Kattints ide_3!</strong></button>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <button onClick="$('#linkszoveg').hide()"><strong>Kattints ide_4!</strong></button>
+
+    &nbsp;&nbsp;&nbsp;
+
+    <button onClick="$('tr:odd').hide()"><strong>Kattints ide_5!</strong></button>
+
+    <br><br><br>
+
+    <span id="linkszoveg">jQuery:</span>
+
+    <a href="https://www.jquery.com">jQuery hivatalos weboldal</a>
+    
+</body>
+</html>
